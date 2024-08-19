@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import Button from '../components/button.astro';
 import Projects from '../components/home/projects.astro';
 import Separator from '../components/home/separator.astro';
@@ -42,6 +43,7 @@ import Layout from '../layouts/main.astro';
 							src="/assets/images/photo.png"
 							loading="eager"
 							decoding="auto"
+							alt="Ale's profile"
 							class="w-full max-w-[150px] h-auto rounded-2xl object-cover relative z-20 duration-300 ease-out border border-dashed border-neutral-300 dark:border-neutral-600 group-hover:translate-x-1 group-hover:translate-y-1"
 							style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5)); mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);"
 						/>
@@ -50,10 +52,13 @@ import Layout from '../layouts/main.astro';
 			</div>
 
 			<div class="hidden sm:block w-full sm:w-1/2 sm:flex sm:justify-end mt-4 sm:mt-0">
-				<img
+				<Image
 					src="/assets/images/photo.png"
 					loading="eager"
 					decoding="auto"
+					width={300}
+					height={300}
+					alt="Ale's profile"
 					class="w-3/4 h-auto max-w-xs rounded-2xl object-cover relative z-20 duration-300 ease-out border border-dashed border-neutral-300 dark:border-neutral-600 group-hover:translate-x-1 group-hover:translate-y-1"
 					style="filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5)); mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);"
 				/>

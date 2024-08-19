@@ -1,20 +1,23 @@
 [
 	{
-		"name": "Email.ML",
-		"description": "Minimalist temporary Email.",
-		"image": "/assets/images/projects/email.ml.png",
-		"url": "https://email.ml"
+		"name": "Famara 12",
+		"description": "Website for reservations with synchronized calendars and email.",
+		"image": "/assets/images/projects/famara12.png",
+		"url": "https://famara12.vercel.app",
+		"alt": "Famara 12 website"
 	},
 	{
-		"name": "DNS.Surf",
-		"description": "Querying DNS Resolution Results in Different Regions Worldwide.",
-		"image": "/assets/images/projects/dns.surf.png",
-		"url": "https://dns.surf"
+		"name": "Chat App",
+		"description": "Real-time chat app with secure token-based authentication.",
+		"image": "/assets/images/projects/chat.png",
+		"url": "https://chat-app-nodejs-9sg2.onrender.com",
+		"alt": "Chat App website"
 	},
 	{
-		"name": "HTML.ZONE",
-		"description": "Web Toolbox.",
-		"image": "/assets/images/projects/html.zone.png",
-		"url": "https://html.zone"
+		"name": "Salud En Marcha",
+		"description": "Android app for tracking health metrics and activities.",
+		"image": "/assets/images/projects/saludenmarcha.png",
+		"url": "https://github.com/aleaguiard/SaludEnMarcha",
+		"alt": "Salud En Marcha App"
 	}
 ]

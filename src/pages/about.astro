@@ -32,28 +32,23 @@ import Layout from '../layouts/main.astro';
 		<div class="px-5 py-10">
 			{
 				experiences.map((experience, loop) => {
+					const isFirstTwo = loop == 0 || loop == 1;
 					return (
-						<>
-							{loop == 0 || loop == 1 ? (
-								<div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
-									<AboutExperience
-										dates={experience.dates}
-										role={experience.role}
-										company={experience.company}
-										description={experience.description}
-										logo={experience.logo}
-									/>
-								</div>
-							) : (
-								<AboutExperience
-									dates={experience.dates}
-									role={experience.role}
-									company={experience.company}
-									description={experience.description}
-									logo={experience.logo}
-								/>
-							)}
-						</>
+						<div
+							class={
+								isFirstTwo
+									? 'pb-10 border-l border-gray-200 dark:border-neutral-700'
+									: ''
+							}
+						>
+							<AboutExperience
+								dates={experience.dates}
+								role={experience.role}
+								company={experience.company}
+								description={experience.description}
+								logo={experience.logo}
+							/>
+						</div>
 					);
 				})
 			}

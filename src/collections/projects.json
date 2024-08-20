@@ -14,6 +14,13 @@
 		"alt": "Chat App website"
 	},
 	{
+		"name": "Minimal Portfolio",
+		"description": "Minimal profile showcases tech stack and links to social media.",
+		"image": "/assets/images/projects/minimal-portfolio.png",
+		"url": "https://aleaguiard.github.io",
+		"alt": "Minimal Portfolio website"
+	},
+	{
 		"name": "Salud En Marcha",
 		"description": "Android app for tracking health metrics and activities.",
 		"image": "/assets/images/projects/saludenmarcha.png",

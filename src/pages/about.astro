@@ -1,6 +1,7 @@
 ---
 import experiences from '../collections/experiences.json';
 import AboutExperience from '../components/about-experience.astro';
+import AboutPhoto from '../components/about-photo.astro';
 import PageHeading from '../components/page-heading.astro';
 import Layout from '../layouts/main.astro';
 ---
@@ -11,9 +12,7 @@ import Layout from '../layouts/main.astro';
 			title="About Me"
 			description="Originally from the Canary Islands (Spain) and now based in Dublin (Ireland). Recently graduated in Web and Multiplatform Development, and since then, I have enjoyed solving problems and building things. Web Dev, Backend and Cross-Platform Mobile Dev."
 		/>
-
-		<img src="/assets/images/about.jpg" class="relative z-30 w-full my-10 rounded-xl" />
-
+		<AboutPhoto />
 		<h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Stack & Skills</h2>
 		<p
 			class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"

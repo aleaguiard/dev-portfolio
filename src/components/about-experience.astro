@@ -1,4 +1,6 @@
 ---
+import Image from 'astro/components/Image.astro';
+
 const { logo, dates, role, company, description } = Astro.props;
 ---
 
@@ -6,7 +8,7 @@ const { logo, dates, role, company, description } = Astro.props;
 	<div
 		class="absolute top-0 left-0 z-40 flex items-center justify-center -translate-x-1/2 bg-white border rounded-full w-14 h-14 border-neutral-300"
 	>
-		<img src={logo} alt={company} class="w-8 h-8" loading="lazy" />
+		<Image src={logo} alt={company} height={40} width={40} loading="lazy" />
 	</div>
 
 	<p class="text-xs uppercase text-neutral-400 dark:text-neutral-500 trackign-widest">

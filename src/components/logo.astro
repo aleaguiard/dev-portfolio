@@ -4,12 +4,12 @@ const { loading } = Astro.props;
 
 <a
 	href="/"
-	class="h-9 w-9 text-base group relative z-30 flex items-center space-x-1.5 text-black dark:text-white font-semibold"
+	class="h-8 w-8 sm:h-9 sm:w-9 text-base group relative z-30 flex items-center space-x-1.5 text-black dark:text-white font-semibold"
 >
 	<img
 		src="/assets/images/logo.png"
 		alt="Aleaguiard"
-		class="h-9 w-9 object-cover -translate-y-0.5 group-hover:-rotate-12 group-hover:scale-[1.3] ease-in-out duration-300"
+		class="h-full w-full -translate-y-0.5 group-hover:-rotate-12 group-hover:scale-[1.3] ease-in-out duration-300"
 		loading={loading}
 	/>
 </a>

@@ -7,22 +7,13 @@ import Logo from '../components/logo.astro';
 <div class="relative w-full h-20 opacity-0 pointer-events-none"></div>
 <header id="header" class="absolute top-0 z-50 w-full h-20">
 	<div
-		class="flex items-center justify-between h-full max-w-5xl pl-6 pr-4 mx-auto border-b border-l-0 border-r-0 border-transparent select-none lg:border-r lg:border-l lg:rounded-b-xl"
+		class="flex items-center justify-between h-full max-w-5xl px-4 mx-auto border-b border-l-0 border-r-0 border-transparent select-none lg:border-r lg:border-l lg:rounded-b-xl"
 	>
-		<Logo loading="eager" />
-		<div
-			id="mobileMenuBackground"
-			onclick="closeMobileMenu()"
-			class="fixed inset-0 z-20 hidden w-screen h-screen duration-300 ease-out bg-white/90 dark:bg-neutral-950/90"
-		>
+		<div class="flex items-center">
+			<Logo loading="eager" />
 		</div>
-		<nav
-			class="relative z-30 flex flex-row-reverse justify-start w-full text-sm sm:justify-end text-neutral-500 dark:text-neutral-400 sm:flex-row"
-		>
-			<div
-				id="openMenu"
-				class="flex flex-col items-end justify-center w-6 h-6 ml-4 cursor-pointer sm:hidden"
-			>
+		<nav class="flex items-center">
+			<div id="openMenu" class="sm:hidden">
 				<svg
 					class="w-8 h-8 dark:text-neutral-200"
 					fill="none"
@@ -30,8 +21,23 @@ import Logo from '../components/logo.astro';
 					stroke-linejoin="round"
 					stroke-width="2"
 					viewBox="0 0 24 24"
-					stroke="currentColor"><path d="M4 8h16M4 16h16"></path></svg
+					stroke="currentColor"
 				>
+					<path d="M4 8h16M4 16h16"></path>
+				</svg>
+			</div>
+			<div id="closeMenu" class="hidden sm:hidden">
+				<svg
+					class="w-8 h-8 text-neutral-600 dark:text-neutral-200"
+					fill="none"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path d="M6 18L18 6M6 6l12 12"></path>
+				</svg>
 			</div>
 			<div
 				id="closeMenu"

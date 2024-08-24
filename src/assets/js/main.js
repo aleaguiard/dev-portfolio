@@ -72,6 +72,8 @@ document.getElementById('darkToggle').addEventListener('click', () => {
 		localStorage.setItem('dark_mode', true);
 		showNight(true);
 	}
+
+	applyMenuItemClasses();
 });
 
 function showDay(animate) {
@@ -131,9 +133,10 @@ window.applyMenuItemClasses = () => {
 	for (let i = 0; i < menuItems.length; i++) {
 		if (menuItems[i].pathname === window.location.pathname) {
 			menuItems[i].classList.add('text-neutral-900', 'dark:text-white');
+		} else {
+			menuItems[i].classList.add('text-neutral-700', 'dark:text-neutral-400');
 		}
 	}
-	//:class="{ 'text-neutral-900 dark:text-white': window.location.pathname == '{menu.url}', 'text-neutral-700 dark:text-neutral-400': window.location.pathname != '{menu.url}' }"
 };
 
 function mobileMenuFunctionality() {

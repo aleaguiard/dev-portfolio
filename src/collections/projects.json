@@ -14,11 +14,11 @@
 		"alt": "Chat App website"
 	},
 	{
-		"name": "Minimal Portfolio",
-		"description": "Minimal profile showcases tech stack and links to social media.",
-		"image": "/assets/images/projects/minimal-portfolio.png",
-		"url": "https://aleaguiard.github.io",
-		"alt": "Minimal Portfolio website"
+		"name": "NOC App",
+		"description": "Website for monitoring server health and logging status with email notifications.",
+		"image": "/assets/images/projects/server-monitor.png",
+		"url": "https://github.com/aleaguiard/server-log-monitor",
+		"alt": "NOC App website"
 	},
 	{
 		"name": "Salud En Marcha",
@@ -26,5 +26,12 @@
 		"image": "/assets/images/projects/saludenmarcha.png",
 		"url": "https://github.com/aleaguiard/SaludEnMarcha",
 		"alt": "Salud En Marcha App"
+	},
+	{
+		"name": "Minimal Portfolio",
+		"description": "Minimal profile showcases tech stack and links to social media.",
+		"image": "/assets/images/projects/minimal-portfolio.png",
+		"url": "https://aleaguiard.github.io",
+		"alt": "Minimal Portfolio website"
 	}
 ]

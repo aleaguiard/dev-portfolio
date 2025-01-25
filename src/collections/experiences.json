@@ -1,11 +1,11 @@
 [
 	{
-		"dates": "September 2024 · Present",
-		"role": "Junior Software Developer",
-		"company": "Secture",
-		"description": "Intern developer, implementing a full-stack feature flag management application using PHP/Symfony for backend and React for frontend. Implemented containerized architecture with Docker.",
-		"logo": "/assets/images/experiences/secture.png"
-	},
+    "dates": "September 2024 · Present",
+    "role": "Software Developer",
+    "company": "Secture",
+    "description": "Working on full-stack development using PHP with Symfony for backend and React for frontend, and building applications with Deno for backend and Astro for frontend.",
+    "logo": "/assets/images/experiences/secture.png"
+  },
 	{
 		"dates": "March 2024 · June 2024 ",
 		"role": "Junior Software Developer",

@@ -3,7 +3,11 @@
 		"dates": "September 2024 · Present",
 		"role": "Software Developer",
 		"company": "Secture",
-		"description": "Currently working on API development, database design, and cloud solutions using Google Cloud, with backend services and integrations, while also contributing to frontend development with Angular.",
+		"description": [
+			"Currently working on API development, database design, and cloud solutions using Google Cloud, with backend services and integrations, while also contributing to frontend development with Angular.",
+			"Working on full-stack development using PHP with Symfony for backend and React for frontend.",
+			"Building an application-bot with Deno for backend and Astro for frontend."
+		],
 		"logo": "/assets/images/experiences/secture.png"
 	},
 	{

@@ -10,36 +10,25 @@ import Layout from '../layouts/main.astro';
 	<section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
 		<PageHeading
 			title="About Me"
-			description="Originally from the Canary Islands (Spain) and now based in Dublin (Ireland). Recently graduated in Web and Multiplatform Development, and since then, I have enjoyed solving problems and building things. Web Dev, Backend and Cross-Platform Mobile Dev."
+			description="Originally from the Canary Islands (Spain) and now based in Dublin (Ireland). With experience in Web Development and Cloud technologies, I enjoy solving problems and building things. Web Dev, Backend and Infrastructure."
 		/>
 		<AboutPhoto />
 		<h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">Stack & Skills</h2>
-		<p
-			class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
-		>
-			💻 Languages: TypeScript, JavaScript, Java, PHP <br />
-			🚀 Runtime & Frameworks: Node.js, Deno, Nest, React, Astro<br />
+		<p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+			💻 Languages: TypeScript, JavaScript, PHP, Java <br />
+			🚀 Runtime & Frameworks: Node.js, NestJS, Deno, Angular<br />
 			🧪 Testing: Vitest, Jest <br />
-			💬 Database: PostgreSQL, MongoDB <br />
-			🔧 Tools: Git, Docker, Vite <br />
-			🗃️ ORM: Prisma, Mongoose, Doctrine
+			💬 Databases & ORM: PostgreSQL, MongoDB, TypeORM, Prisma, Mongoose <br />
+			☁️ Cloud & DevOps: Docker, Google Cloud, Git, CI/CD
 		</p>
 
-		<h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">
-			Experience
-		</h2>
+		<h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Experience</h2>
 		<div class="px-5 py-10">
 			{
 				experiences.map((experience, loop) => {
 					const isFirstTwo = loop == 0 || loop == 1;
 					return (
-						<div
-							class={
-								isFirstTwo
-									? 'pb-10 border-l border-gray-200 dark:border-neutral-700'
-									: ''
-							}
-						>
+						<div class={isFirstTwo ? 'pb-10 border-l border-gray-200 dark:border-neutral-700' : ''}>
 							<AboutExperience
 								dates={experience.dates}
 								role={experience.role}
@@ -53,12 +42,8 @@ import Layout from '../layouts/main.astro';
 			}
 		</div>
 
-		<h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">
-			Get in Touch
-		</h2>
-		<p
-			class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
-		>
+		<h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Get in Touch</h2>
+		<p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
 			To stay updated on my projects, visit my <a
 				href="https://github.com/aleaguiard"
 				target="_blank"
